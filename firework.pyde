@@ -63,7 +63,7 @@ def draw():
         mover.follow()
         
         
-def mouseClicked():
+def mousePressed():
     for  i in range (100):
         movers.append(Mover(mouseX,mouseY))
         
