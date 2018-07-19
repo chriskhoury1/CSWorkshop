@@ -34,7 +34,7 @@ class Mover:
         dir.normalize()
         
         self.acc=dir
-        self.acc.mult(-1)
+        self.acc.mult(-5)
         self.vel+=self.acc
 
         self.pos +=self.vel
@@ -64,6 +64,6 @@ def draw():
         
         
 def mousePressed():
-    for  i in range (100):
+    for  i in range (600):
         movers.append(Mover(mouseX,mouseY))
         
